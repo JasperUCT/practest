@@ -30,6 +30,12 @@ plot.NDVI(dat)
 
 <br>
 
+Q1: This plot suggests that Fynbos greenness (NDVI) as observed from satellite saturates with time since fire. Why do you think it saturates rather than increasing linearly with time?
+
+>*Answer 1:*
+
+<br>
+
 ### 2. Fit models using Non-linear Least Squares (NLS)
 
 Now we'll fit the simple and full negative exponential models using Non-linear Least Squares (NLS).
@@ -91,9 +97,9 @@ summary(fit_negexpS)
 
 Lots more parameters...
 
-Q1: How do the estimates for the common parameters compare?
+Q2: How do the estimates for the common parameters compare?
 
->*Answer 1:*
+>*Answer 2:*
 
 <br>
 
@@ -109,13 +115,13 @@ anova(fit_negexp, fit_negexpS)
 
 <br>
 
-Q2: Which model is better?
-
->*Answer 2:*
-
-Q3: How many degrees of freedom are there in this ANOVA and why (i.e. what are they)?
+Q3: Which model is better?
 
 >*Answer 3:*
+
+Q4: How many degrees of freedom are there in this ANOVA and why (i.e. what are they)?
+
+>*Answer 4:*
 
 <br>
 
@@ -206,9 +212,9 @@ AIC_simple - AIC_full
 
 <br>
 
-Q4: Is there a preferred model and if so, which one?
+Q5: Is there a preferred model and if so, which one?
 
->*Answer 4:*
+>*Answer 5:*
 
 <br>
 
@@ -224,8 +230,8 @@ AIC(fit_negexp, fit_negexpS)
 
 You'll notice that these are completely different to the AICs for the MLE models...
 
-Q5: Why is it not okay to compare the AIC of these NLS models with the AIC of the MLE models? Hint: type `?AIC` into the R console and do some reading.
+Q6: Why is it not okay to compare the AIC of these NLS models with the AIC of the MLE models? Hint: type `?AIC` into the R console and do some reading.
 
->*Answer 5:*
+>*Answer 6:*
 
 <br>
